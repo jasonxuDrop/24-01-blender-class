@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6985180774368375442}
   - component: {fileID: 429557776988602563}
   - component: {fileID: 5853766066347614318}
+  - component: {fileID: 8723242713392940489}
   m_Layer: 0
   m_Name: Building.001
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8723242713392940489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7091893134273243481}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 17.063093, y: 10.671261, z: 10.630478}
+  m_Center: {x: 0.01201725, y: 5.3356304, z: -0.017773867}
