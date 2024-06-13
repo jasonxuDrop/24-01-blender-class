@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
 	public int ObjectCount;
 	public int TotalObjectCount;
 	public TMPro.TextMeshProUGUI ObjectCountText;
+	public TMPro.TextMeshProUGUI ObjectNameText;
+	public Animator PopUpAnimator;
 
 
 	private void Awake()
@@ -28,12 +30,17 @@ public class GameManager : MonoBehaviour
 	/// <param name="interactableObject"></param>
 	public void OnInteractWithObject(InteractableObject interactableObject)
 	{
-		// things happen
+		// show the object name in the UI
+		ObjectNameText.text = interactableObject.ObjectName;
 
 		// increment the object count
 		ObjectCount++;
 
+		// update the text
 		UpdateObjectCountText();
+
+		// show the pop up
+		PopUpAnimator.SetTrigger("Show");
 	}
 
 	private void UpdateObjectCountText()

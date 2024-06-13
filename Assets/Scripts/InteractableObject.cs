@@ -6,6 +6,7 @@ public class InteractableObject : MonoBehaviour
 {
 
     public bool CanInteract = true;
+    public string ObjectName;
 
     /// <summary>
     /// Called by PlayerInteract when the player interacts with the object
